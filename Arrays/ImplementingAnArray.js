@@ -20,4 +20,18 @@ class MyArray {
         this.length--;
         return lasItem;
     }
+
+    delete(index) {
+        const item = this.data[index];
+        this.shiftItems(index);
+        return lasItem;
+    }
+
+    shiftItems(index) {
+        for(let i = index; i < this.length - 1; i++){
+            this.data[i] = this.data[i+1];
+        }
+        delete this.data[this.length-1];
+        this.length--;
+    }
 }
