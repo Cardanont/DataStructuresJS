@@ -16,4 +16,6 @@ function reverse(str) {
     return(reversed.join(""))
 }
 
-reverse("Hello My Name is Cardananont")
+const reverse2 = str => [...str].reverse().join("");
+
+reverse2("Hello My Name is Cardananont")
